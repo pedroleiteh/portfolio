@@ -1,3 +1,31 @@
+:root {
+  --dark: #1B262C;
+  --blue-300: #0F4C75;
+  --blue-200: #3282B8;
+  --blue-100: #BBE1FA;
+
+  --gray: #E5E5E5;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+  background: var(--gray);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo a {
+  color: var(--blue-300);
+}
+
+.menu button {
+  border: none;
+  background: none;
 }
