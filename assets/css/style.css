@@ -123,3 +123,67 @@ a {
   font-weight: 700;
 }
 
+/* graduation */
+
+.graduation {
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  background: var(--soft-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-large {
+  width: 80%;
+}
+
+.box-large-img {
+  display: flex;
+  justify-content: center;
+  background: var(--white);
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.box-large-title {
+  font-weight: 600;
+}
+
+/* profissional Experience */
+
+.box-large ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button-primary {
+  background: var(--blue);
+  border: none;
+  color: var(--white);
+  padding: 0.6rem 1.1rem;
+}
+
+.button-primary:hover {
+  background: none;
+  border: 1px solid var(--blue);
+  padding: 0.6rem 1.1rem;
+  color: var(--blue);
+}
+
+.button-secundary {
+  background: none;
+  border: 1px solid var(--blue);
+  padding: 0.6rem 1.1rem;
+  color: var(--blue);
+}
+
+.button-secundary:hover {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--white);
+  padding: 0.6rem 1.1rem;
+}
+
