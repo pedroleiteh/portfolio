@@ -19,6 +19,10 @@ h1, h2 {
   font-weight: 700;
 }
 
+a {
+  font-weight: 600;
+}
+
 /* Header */
 
 .header {
@@ -77,6 +81,45 @@ h1, h2 {
   margin: 1rem 0;
 }
 
+.aboutMe h2 {
+  margin: 1rem 0;
+}
+
 .aboutMe p {
   padding: 0.5rem 0;
 }
+
+/* Skills */
+
+.title-cards {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.icon {
+  color: var(--blue);
+  font-size: 32px;
+}
+
+.box {
+  width: 156px;
+  height: 118px;
+  background: var(--white);
+  padding-top: 2.5rem;
+  padding-left: 1rem;
+}
+
+.box p {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
