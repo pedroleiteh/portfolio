@@ -5,6 +5,8 @@
   --blue: #2A7AE4;
   --white: #fff;
   --black-line: rgba(0, 0, 0, 0.323);
+
+  --gray: #A2A2A2;
 }
 
 body {
@@ -22,6 +24,10 @@ h1, h2 {
 
 a {
   font-weight: 600;
+}
+
+input {
+  border: none;
 }
 
 /* Header */
@@ -153,6 +159,10 @@ a {
 
 /* profissional Experience */
 
+.professional-xp {
+  padding-bottom: 2rem;
+} 
+
 .box-large ul {
   display: flex;
   justify-content: flex-start;
@@ -191,12 +201,9 @@ a {
 /* Form */
 
 .form {
-  margin: 2rem 0 2rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 3rem;
+  padding: 3rem;
   background: var(--soft-blue);
 }
 
@@ -205,30 +212,57 @@ a {
 }
 
 .form p {
-  text-align: justify;
   margin-bottom: 1rem;
 }
 
-.form label {
-  display: block;
-  background: var(--white);
+.input-container {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
 }
 
-.form input {
-  border: none;
+.input {
+  box-sizing: border-box;
   border-bottom: 1px solid var(--black-line);
+  padding: 1.375rem 0.5rem 0.5rem;
+  height: 3.25rem;
   width: 100%;
-  margin-bottom: 1rem;
 }
 
-.form input:active {
-  border-bottom: 1px solid var(--blue);
+.input::placeholder {
+  visibility: hidden; 
+  color: #ec060600;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-label {
+  position: absolute;
+  top: 1.375rem;  
+  left: 0.5rem;
+  transition: all .25s;
+  color: var(--gray)
+}
+
+.input:not(:placeholder-shown) + .input-label, .input:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all .25s;
 }
 
 .form textarea {
   border: none;
   border-bottom: 1px solid var(--black-line);
   width: 100%;
+}
+
+.form textarea:focus {
+  outline: none;
 }
 
 .form textarea::placeholder {

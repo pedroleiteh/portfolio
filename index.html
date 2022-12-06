@@ -131,7 +131,7 @@
   </section>
 
   <!-- Experiência profissional -->
-  <section>
+  <section class="professional-xp">
     <div class="title-cards">
       <h2>Experiência profissional</h2>
     </div>
@@ -154,12 +154,21 @@
     <h2>Contato</h2>
     <p>Quer entrar em contato comigo? Preencha o formulário e entrarei em contato o mais rápido possível</p>
     <form>
-      <label for="name">nome:</label>
-      <input type="text" name="name" id="name">
-      <label for="email">email:</label>
-      <input type="email" name="email" id="name">
-      <label for="topic">Assunto:</label>
-      <input type="text" name="title" id="topic">
+      <div class="input-container">
+        <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
+        <label class="input-label" for="nome">Nome</label>
+        <!-- <span class="input-mensagem-erro">Este campo não está válido</span> -->
+      </div>
+      <div class="input-container">
+        <input name="email" id="email" class="input" type="email" placeholder="Email" required>
+        <label class="input-label" for="email">Email</label>
+        <!-- <span class="input-mensagem-erro">Este campo não está válido</span> -->
+      </div>
+      <div class="input-container">
+        <input name="topic" id="topic" class="input" type="text" placeholder="Assunto" required>
+        <label class="input-label" for="topic">Assunto</label>
+        <!-- <span class="input-mensagem-erro">Este campo não está válido</span> -->
+      </div>
       <textarea name="" id="" cols="30" rows="6" placeholder="mensagem"></textarea>
       <button class="button-primary">Enviar mensagem</button>
     </form>
