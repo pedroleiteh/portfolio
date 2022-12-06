@@ -253,6 +253,7 @@ input {
   font-size: 0.875rem;
   top: 0.25rem;
   transition: all .25s;
+  color: var(--blue);
 }
 
 .form textarea {
@@ -273,4 +274,17 @@ input {
 
 .form button {
   margin-top: 1rem;
+}
+
+/* footer */
+
+.footer {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-weight: 700;
 }
