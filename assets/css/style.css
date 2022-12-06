@@ -22,12 +22,12 @@ h1, h2 {
   font-weight: 700;
 }
 
-a {
-  font-weight: 600;
-}
-
 input {
   border: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Header */
@@ -42,6 +42,23 @@ input {
 .logo a {
   color: var(--dark);
   font-weight: 900;
+}
+
+.menu nav {
+  display: none;
+}
+
+.menu nav ul {
+  display: flex;
+  font-weight: 500;
+}
+
+.menu nav ul li {
+  padding-left: 1rem;
+}
+
+.menu nav ul li a {
+  color: var(--black);
 }
 
 .menu button {
@@ -76,15 +93,13 @@ input {
   color: var(--font);
 }
 
-.links-list ul li a:hover {
-  text-decoration: underline;
-}
+
 
 /* about me section */
 
 .aboutMe {
   background: var(--soft-blue);
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem;
   margin: 1rem 0;
 }
 
@@ -287,4 +302,16 @@ input {
 
 .footer p {
   font-weight: 700;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .menu button {
+    display: none;
+  }
+
+  .menu nav {
+    display: block;
+  }
 }
