@@ -267,6 +267,7 @@ input {
 
 .form textarea::placeholder {
   font-size: 16px;
+  color: var(--gray);
   padding: 1rem;
 }
 
