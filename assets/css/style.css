@@ -45,7 +45,6 @@ a:hover {
 }
 
 .logo a {
-  color: var(--dark);
   font-weight: 900;
   color: var(--blue);
 }
@@ -96,6 +95,7 @@ a:hover {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  font-weight: 600;
 }
 
 .links-list ul li a {
@@ -357,5 +357,50 @@ a:hover {
 
   .box-large-img {
     height: 300px;
+  }
+}
+
+@media (min-width: 968px) {
+  main {
+    max-width: none;
+    padding: 0 7rem;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+  
+  .logo a {
+    font-size: 30px;
+  }
+
+  .menu nav ul li {
+    padding-left: 3rem;
+  }
+  
+
+  .perfil img {
+    width: 300px;
+  }
+  .home {
+    padding-top: 1rem;
+    height: 50vh;
+  }
+
+  .home-content {
+    padding-top: 5rem;
+  }
+
+  .links-list ul {
+    gap: 3rem;
+    margin-top: 2rem;
   }
 }
