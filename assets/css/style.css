@@ -1,7 +1,7 @@
 :root {
   --black: #464646;
   --soft-blue: #eef3fa;
-  --blue: #2A7AE4;
+  --blue: #2a7ae4;
   --white: #fff;
   --black-line: rgba(0, 0, 0, 0.323);
 
@@ -166,11 +166,11 @@ a:hover {
   align-items: center;
 }
 
-.box-large {
+.box-medium {
   width: 296px;
 }
 
-.box-large-img {
+.box-medium-img {
   display: flex;
   justify-content: center;
   background: var(--white);
@@ -178,7 +178,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-.box-large-title {
+.box-medium-title {
   font-weight: 600;
 }
 
@@ -195,11 +195,27 @@ a:hover {
   margin-top: 1rem;
 }
 
+.large-box {
+  width: 296px;
+}
+
+.box-large-title {
+  font-weight: 600;
+}
+
+.box-large-img {
+  display: flex;
+  justify-content: center;
+  background: var(--white);
+  height: 150px;
+  margin-bottom: 1rem;
+} 
+
 .button-primary {
   background: var(--blue);
   border: none;
   color: var(--white);
-  padding: 0.6rem 1.1rem;
+  padding: 0.6rem 1.1rem; 
 }
 
 .button-primary:hover {
@@ -337,5 +353,9 @@ a:hover {
 
   .box {
     width: 224px;
+  }
+
+  .box-large-img {
+    height: 300px;
   }
 }
