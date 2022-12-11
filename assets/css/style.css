@@ -360,7 +360,7 @@ a:hover {
   }
 }
 
-@media (min-width: 968px) {
+@media (min-width: 1200px) {
   main {
     max-width: none;
     padding: 0 7rem;
@@ -402,5 +402,35 @@ a:hover {
   .links-list ul {
     gap: 3rem;
     margin-top: 2rem;
+  }
+
+  .aboutMe {
+    padding: 3rem;
+  }
+
+  .aboutme-content {
+    max-width: 800px;
+  }
+
+  .box {
+    width: 170px;
+    height: 150px;
+  }
+
+  .box-medium {
+    margin: 0 3rem;
+  }
+
+  .box-medium-img {
+    width: 368px;
+    height: 286px;
+  }
+
+  .form textarea{
+    height: 200px;
+  }
+
+  .form button {
+    padding: 16px;
   }
 }
