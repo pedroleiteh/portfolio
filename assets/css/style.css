@@ -1,7 +1,6 @@
 :root {
   --black: #464646;
-  --background: #f7f7f7;
-  --soft-blue: #EAF2FD;
+  --soft-blue: #eef3fa;
   --blue: #2A7AE4;
   --white: #fff;
   --black-line: rgba(0, 0, 0, 0.323);
@@ -12,9 +11,15 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  background: var(--background);
+  background: var(--soft-blue);
   color: var(--black);
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 720px;
 }
 
 h1, h2 {
@@ -42,6 +47,7 @@ a:hover {
 .logo a {
   color: var(--dark);
   font-weight: 900;
+  color: var(--blue);
 }
 
 .menu nav {
@@ -61,6 +67,10 @@ a:hover {
   color: var(--black);
 }
 
+.menu nav ul li a:hover {
+  color: var(--blue);
+}
+
 .menu button {
   border: none;
   background: none;
@@ -74,7 +84,6 @@ a:hover {
 
 .perfil img {
   width: 98px;
-  height: 98px;
   border-radius: 50%;
 }
 
@@ -98,13 +107,14 @@ a:hover {
 /* about me section */
 
 .aboutMe {
-  background: var(--soft-blue);
+  border: 2px dashed var(--blue);
   padding: 1.5rem 1rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .aboutMe h2 {
   margin: 1rem 0;
+  color: var(--blue);
 }
 
 .aboutMe p {
@@ -150,7 +160,7 @@ a:hover {
 .graduation {
   margin: 2rem 0;
   padding-bottom: 2rem;
-  background: var(--soft-blue);
+  border: 1px dashed var(--blue);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +188,7 @@ a:hover {
   padding-bottom: 2rem;
 } 
 
-.box-large ul {
+.buttons {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
@@ -219,11 +229,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  background: var(--soft-blue);
 }
 
 .form h2 {
   margin-bottom: 1rem;
+  color: var(--blue);
 }
 
 .form p {
@@ -302,6 +312,8 @@ a:hover {
 
 .footer p {
   font-weight: 700;
+  border-top: 1px solid var(--black-line);
+  padding-top: 1rem;
 }
 
 /* Tablet */
@@ -313,5 +325,17 @@ a:hover {
 
   .menu nav {
     display: block;
+  }
+
+  .perfil {
+    float: right;
+  }
+
+  .perfil img {
+    width: 146px;
+  }
+
+  .box {
+    width: 224px;
   }
 }
