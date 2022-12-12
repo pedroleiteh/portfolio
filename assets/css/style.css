@@ -159,27 +159,42 @@ a:hover {
 
 .graduation {
   margin: 2rem 0;
-  padding-bottom: 2rem;
   border: 1px dashed var(--blue);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.boxes-medium {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
 .box-medium {
   width: 296px;
+  margin-bottom: 2rem;
 }
 
 .box-medium-img {
   display: flex;
+  align-items: center;
   justify-content: center;
   background: var(--white);
-  height: 150px;
-  margin-bottom: 1rem;
+  height: 118px; 
+}
+
+.anhembi-logo {
+  height: 100px;
+}
+
+.alura-logo {
+  width: 90px;
 }
 
 .box-medium-title {
   font-weight: 600;
+  margin: 0.8rem 0;
 }
 
 /* profissional Experience */
@@ -355,6 +370,15 @@ a:hover {
     width: 224px;
   }
 
+  .boxes-medium {
+    flex-direction: row;
+  }
+
+  .box-medium {
+    margin-right: 1rem;
+    width: 224px;
+  }
+
   .box-large-img {
     height: 300px;
   }
@@ -367,7 +391,7 @@ a:hover {
   }
 
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h1 {
@@ -418,12 +442,12 @@ a:hover {
   }
 
   .box-medium {
-    margin: 0 3rem;
+    margin-right: 10rem;
   }
 
   .box-medium-img {
-    width: 368px;
-    height: 286px;
+    width: 300px;
+    height: 200px;
   }
 
   .form textarea{
