@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo a {
+  font-weight: 900;
+  color: var(--blue);
+}
+
+.menu nav {
+  display: none;
+}
+
+.menu nav ul {
+  display: flex;
+  font-weight: 500;
+}
+
+.menu nav ul li {
+  padding-left: 1rem;
+}
+
+.menu nav ul li a {
+  color: var(--black);
+}
+
+.menu nav ul li a:hover {
+  color: var(--blue);
+}
+
+.menu button {
+  border: none;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .menu button {
+    display: none;
+  }
+
+  .menu nav {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo a {
+    font-size: 30px;
+  }
+
+  .menu nav ul li {
+    padding-left: 3rem;
+  }
+}

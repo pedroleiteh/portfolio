@@ -1,0 +1,60 @@
+.home {
+  margin: 1rem;
+}
+
+.perfil img {
+  width: 98px;
+  border-radius: 50%;
+}
+
+.title h1 {
+  line-height: 1.1;
+  padding: 0.7rem 0;
+}
+
+.links-list ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.links-list ul li a {
+  color: var(--font);
+}
+
+.links-list img {
+  width: 0.375rem;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+
+  .perfil {
+    float: right;
+  }
+
+  .perfil img {
+    width: 146px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .home {
+    height: 45vh;
+  }
+
+  .perfil img {
+    width: 300px;
+  }
+
+  .links-list ul {
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  .links-list img {
+    width: 0.625rem;
+  }
+}

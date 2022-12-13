@@ -1,0 +1,26 @@
+.aboutMe {
+  border: 2px dashed var(--blue);
+  padding: 1.5rem 1rem;
+  margin: 2rem 0;
+  background: var(--white);
+}
+
+.aboutMe h2 {
+  margin: 1rem 0;
+  color: var(--blue);
+}
+
+.aboutMe p {
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 1200px) {
+
+  .aboutMe {
+    padding: 3rem;
+  }
+
+  .aboutme-content {
+    max-width: 800px;
+  }
+}

@@ -1,0 +1,61 @@
+.professional-xp {
+  padding-bottom: 2rem;
+} 
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.large-box {
+  width: 296px;
+}
+
+.box-large-title {
+  font-weight: 600;
+}
+
+.box-large-img {
+  display: flex;
+  justify-content: center;
+  background: var(--white);
+  height: 150px;
+  margin-bottom: 1rem;
+} 
+
+.button-primary {
+  background: var(--blue);
+  border: none;
+  color: var(--white);
+  padding: 0.6rem 1.1rem; 
+}
+
+.button-primary:hover {
+  background: none;
+  border: 1px solid var(--blue);
+  padding: 0.6rem 1.1rem;
+  color: var(--blue);
+}
+
+.button-secundary {
+  background: none;
+  border: 1px solid var(--blue);
+  padding: 0.6rem 1.1rem;
+  color: var(--blue);
+}
+
+.button-secundary:hover {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--white);
+  padding: 0.6rem 1.1rem;
+}
+
+@media (min-width: 768px) {
+
+  .box-large-img {
+    height: 400px;
+  }
+}

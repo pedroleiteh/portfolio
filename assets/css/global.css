@@ -1,0 +1,60 @@
+:root {
+  --black: #464646;
+  --soft-blue: #eef3fa;
+  --blue: #2a7ae4;
+  --white: #fff;
+  --black-line: rgba(0, 0, 0, 0.323);
+  --gray: #A2A2A2;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  background: var(--soft-blue);
+  color: var(--black);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 720px;
+}
+
+h1, h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+input {
+  border: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: none;
+    padding: 0 7rem;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
