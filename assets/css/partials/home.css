@@ -43,6 +43,11 @@
 
   .home {
     height: 45vh;
+    margin: 4rem 0;
+  }
+
+  .title {
+    margin-bottom: 1.5rem;
   }
 
   .perfil img {

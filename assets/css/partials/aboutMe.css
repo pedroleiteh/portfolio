@@ -12,6 +12,7 @@
 
 .aboutMe p {
   padding: 0.5rem 0;
+  text-align: justify;
 }
 
 @media (min-width: 1200px) {
