@@ -21,13 +21,19 @@
   width: 156px;
   height: 118px;
   background: var(--white);
-  padding-top: 2.5rem;
-  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .box p {
   margin-top: 1rem;
   font-weight: 700;
+}
+
+.spring-logo {
+  width: 60%;
 }
 
 @media (min-width: 768px) {
@@ -42,5 +48,10 @@
   .box {
     width: 170px;
     height: 150px;
+  }
+
+  .spring-logo {
+    width: 50%;
+    height: 50%;
   }
 }
