@@ -14,7 +14,9 @@
 }
 
 .box-large-title {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .box-large-img {
@@ -51,6 +53,16 @@
   border: 1px solid var(--blue);
   color: var(--white);
   padding: 0.6rem 1.1rem;
+}
+
+.tools-this-project {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.tools-this-project span {
+  font-weight: 700;
+  color: var(--blue);
 }
 
 @media (min-width: 768px) {
